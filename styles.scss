@@ -1,0 +1,22 @@
+@import 'block';
+
+%square{
+  width: 100px;
+  height: 100px;
+}
+
+.first{
+  @extend %square;
+  background-color: brown;
+}
+
+.second{
+  @extend %square;
+  background-color: green;
+}
+
+.third{
+  @extend %square;
+  background-color: coral;
+}
+
