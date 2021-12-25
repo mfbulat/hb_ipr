@@ -1,0 +1,29 @@
+.header {
+    box-sizing: border-box;
+    height: 200px;
+    display: flex;
+    align-items: end;
+    box-shadow: 0 1px 13px 7px rgb(0 0 0 / 8%);
+}
+
+.container {
+    padding: 20px 50px;
+}
+
+.menu .menu__list {
+    display: flex;
+}
+
+.menu .menu__list .menu__list-item {
+    padding: 5px;
+    margin-right: 40px;
+}
+
+.menu .menu__list .menu__list-item .menu__link {
+    text-decoration: none;
+    color: #2e2d30;
+}
+
+.menu__link--active {
+border-bottom: 3px solid #fbeb5d;
+}
