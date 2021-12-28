@@ -7,6 +7,7 @@
 </head>
 <body>
 
+
 <div>
     <div class="first">1</div>
     <div class="second">2</div>
@@ -15,6 +16,30 @@
 </div>
 
 <div>
+    <!--    Фильтры-->
+    <svg width="400" height="300" viewbox="0 0 400 300">
+        <defs>
+            <filter id="myFilter1">
+                <feGaussianBlur stdDeviation="10"/>
+            </filter>
+        </defs>
+        <circle cx="200" cy="150" fill="#3498db" filter="url(#myFilter1)" r="80"/>
+    </svg>
+    <!--    Фильтры-->
+
+    <!--    Анимация-->
+    <svg>
+        <rect width="200" height="200" fill="slategrey">
+            <animate attributeName="height" from="0" to="200" dur="3s"/>
+        </rect>
+    </svg>
+    <svg>
+        <rect x="0" y="0" width="200" height="200" fill="slategrey">
+            <animate attributeName="x" from="0" to="200" dur="3s" fill="freeze"/>
+        </rect>
+    </svg>
+    <!--    Анимация-->
+
 
     <svg>
         <use class="password-image" xlink:href="svg/sprite.svg#password"></use>
@@ -23,6 +48,11 @@
     <svg width="200" height="200">
         <rect x='5' y='10' width="180" height="90" fill="rebeccapurple"
               stroke="grey" stroke-width="5" ry="10"
+        ></rect>
+    </svg>
+    <svg width="200" height="200">
+        <rect x='5' y='10' width="180" height="90" fill="rebeccapurple"
+              stroke="grey" stroke-width="5" ry="10" stroke-dasharray="5"
         ></rect>
     </svg>
     <svg width="200" height="200">
@@ -39,8 +69,9 @@
             <ellipse rx="45" ry="37" cx="55" cy="60" transform="rotate(-45, 55, 55)"/>
             <ellipse rx="45" ry="37" cx="190" cy="60" transform="rotate(45, 190, 55)"/>
             <circle r="67" cx="122" cy="125"/>
-         </g>
+        </g>
     </svg>
+
 </div>
 
 </body>
